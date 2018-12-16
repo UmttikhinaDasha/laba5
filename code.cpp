@@ -153,6 +153,7 @@ int main()
 		switch (menu)
 		{
 		case 1:
+			system("cls");
 			for (int i = 0; i < poruadok; i++)
 			{
 				delete[] arr[i];
@@ -169,19 +170,22 @@ int main()
 			arr = zapolnenie(arr, poruadok);
 
 			vvod_dan = 1;
+			system("cls");
 			break;
 
 		case 2:
-
+			system("cls");
 			if (vvod_dan != 1)
 				printf("Неверный пункт меню\n");
 			else
 			{
 				arr = obrabotka(arr, poruadok);
 			}
+			system("cls");
 			break;
 
 		case 3:
+			system("cls");
 			if (vvod_dan != 1)
 				printf("Неверный пункт меню\n");
 			for (int i = 0; i < poruadok; i++)
@@ -190,9 +194,11 @@ int main()
 					printf("%d  ", arr[i][j]);
 				printf("\n");
 			}
+			system("cls");
 			break;
 
 		case 4:
+			system("cls");
 			for (int i = 0; i < poruadok; i++)
 			{
 				delete[] arr[i];
@@ -209,6 +215,7 @@ int main()
 
 			arr = romdom(arr, poruadok);
 			vvod_dan = 1;
+			system("cls");
 
 		}
 	} while (menu != 5);
